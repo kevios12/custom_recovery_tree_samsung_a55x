@@ -153,10 +153,6 @@ TW_MAX_BRIGHTNESS := 150
 TW_NO_REBOOT_BOOTLOADER := true
 TW_USE_NEW_MINADBD := true
 
-# TWRP Offsets
-TW_Y_OFFSET := 90
-TW_H_OFFSET := -90
-
 # TWRP Configuration - Excludes
 TW_EXCLUDE_APEX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
@@ -170,9 +166,6 @@ TW_INCLUDE_NTFS_3G := true
 
 # TWRP Configuration - Vendor Modules
 TW_LOAD_VENDOR_BOOT_MODULES := true
-
-# TWRP Configuration - Version
-TW_DEVICE_VERSION := A556B
 
 # Workaround for copyout error
 TARGET_COPY_OUT_VENDOR := vendor

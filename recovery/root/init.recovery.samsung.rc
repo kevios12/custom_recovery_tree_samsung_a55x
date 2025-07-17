@@ -1,3 +1,6 @@
+on fs
+   start init_flashlight
+
 on init
     # unlink /efs > /mnt/vendor/efs
     rm /efs

@@ -26,3 +26,8 @@ on property:twrp.decrypt.done=true && property:twrp.all.users.decrypted=true
     stop tzts_service
     stop vendor.keymint-default
     stop vendor.gatekeeper-default
+
+on property:ro.orangefox.boot=1
+    mkdir /tmp/flashlight
+    write /tmp/flashlight/max_brightness "1"
+    symlink /sys/devices/virtual/camera/flash/rear_flash /tmp/flashlight/brightness
